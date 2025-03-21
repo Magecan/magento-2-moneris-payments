@@ -1,0 +1,6 @@
+card_type,"Credit Card Type"
+card_num,"Credit Card Number"
+reference_no,"Reference Number"
+response_code,"Response Code"
+transaction_date_time,"Transaction Date/Time"
+wallet_type,"Wallet Type"

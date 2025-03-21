@@ -1,0 +1,21 @@
+/**
+ * Copyright © Magecan, Inc. All rights reserved.
+ */
+.moneris-section .heading {
+    background: url("../images/moneris_logo.png") no-repeat 0 50% / 18rem auto;
+    background-size: contain;
+    padding-left: 20rem;
+}
+.moneris-section .button-container {
+    float: right;
+}
+.moneris-section .config-alt {
+    background: url("../images/moneris_allinone.png") no-repeat scroll 0 0 / 100% auto;
+    height: 33px;
+    margin: 0.5rem 0 0;
+    width: 625px;
+}
+.moneris-credentials-success-message {
+    background: none;
+    margin: 0;
+}

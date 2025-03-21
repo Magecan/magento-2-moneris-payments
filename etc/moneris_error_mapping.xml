@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magecan, Inc. All rights reserved.
+ */
+-->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/error_mapping.xsd">
+    <message_list>
+        <message code="050" translate="true">Re-try System Problem</message>
+        <message code="051" translate="true">Expired Card</message>    
+        <message code="052" translate="true">Excess Pin Tries</message>
+        <message code="053" translate="true">Re-try Edit Error</message>    
+        <message code="054" translate="true">Re-try System Problem</message>
+        <message code="055" translate="true">Card Not Supported</message>    
+        <message code="056" translate="true">Card Not Supported</message>    
+        <message code="057" translate="true">Card Use Limited</message>    
+        <message code="058" translate="true">Card Use Limited</message>    
+        <message code="059" translate="true">Card Use Limited</message>
+        <message code="060" translate="true">No Chequing/savings Acct Re-try Or Cancel</message>
+        <message code="061" translate="true">Card Is Not Set Up</message>
+        <message code="062" translate="true">Re-try System Problem</message>
+        <message code="063" translate="true">Re-try System Problem</message>
+        <message code="064" translate="true">Re-try Invalid Card</message>
+        <message code="065" translate="true">Exceeds Correction Limit</message>
+        <message code="066" translate="true">Re-try System Problem</message>
+        <message code="067" translate="true">Re-try Edit Error</message>
+        <message code="068" translate="true">Re-try System Problem</message>
+        <message code="069" translate="true">Re-try Edit Error</message>
+        <message code="070" translate="true">Invalid Card</message>
+        <message code="071" translate="true">Invalid Card</message>
+        <message code="072" translate="true">Re-try System Problem</message>
+        <message code="073" translate="true">Invalid Card</message>
+        <message code="074" translate="true">Unable To Authorize</message>
+        <message code="075" translate="true">Re-try Invalid Card</message>
+        <message code="076" translate="true">Insufficient Funds</message>
+        <message code="077" translate="true">Limit Exceeded</message>
+        <message code="078" translate="true">Re-try System Problem</message>
+        <message code="079" translate="true">Limit Exceeded</message>
+        <message code="080" translate="true">Limit Exceeded</message>
+        <message code="081" translate="true">Limit Exceeded</message>
+        <message code="082" translate="true">Usage Exceeded</message>
+        <message code="083" translate="true">Limit Exceeded</message>
+        <message code="085" translate="true">Card Not Supported</message>
+        <message code="086" translate="true">Re-try System Problem</message>
+        <message code="087" translate="true">Over Retailer Limit</message>
+        <message code="088" translate="true">Re-try System Problem</message>
+        <message code="089" translate="true">Card Use Limited</message>    
+        <message code="090" translate="true">Re-try System Problem</message>
+        <message code="091" translate="true">Re-try System Problem</message>
+        <message code="092" translate="true">Over Retailer Limit</message>
+        <message code="093" translate="true">Re-try System Problem</message>
+        <message code="094" translate="true">Re-try System Problem</message>
+        <message code="095" translate="true">Re-try System Problem</message>
+        <message code="096" translate="true">Re-try Pin Error</message>
+        <message code="097" translate="true">Re-try Invalid Card</message>
+        <message code="098" translate="true">Re-try System Problem</message>
+        <message code="099" translate="true">Re-try Invalid Card</message>
+        <message code="100" translate="true">Re-try System Problem</message>
+        <message code="101" translate="true">Re-try System Problem</message>
+        <message code="102" translate="true">Re-try System Problem</message>
+        <message code="103" translate="true">Re-try System Problem</message>
+        <message code="104" translate="true">Re-try System Problem</message>
+        <message code="105" translate="true">Invalid Card</message>
+        <message code="106" translate="true">Over Retailer Limit</message>
+        <message code="107" translate="true">Usage Exceeded</message>    
+        <message code="108" translate="true">Re-try System Problem</message>
+        <message code="109" translate="true">Over Retailer Limit</message>
+        <message code="110" translate="true">Usage Exceeded</message>
+        <message code="111" translate="true">Re-try System Problem</message>
+        <message code="112" translate="true">Re-try System Problem</message>    
+        <message code="113" translate="true">Re-try System Problem</message>
+        <message code="115" translate="true">Re-try System Problem</message>
+        <message code="121" translate="true">Re-try System Problem</message>    
+        <message code="122" translate="true">Re-try Edit Error</message>
+
+        <message code="150" translate="true">Re-try Edit Error</message>
+        <message code="200" translate="true">Re-try Edit Error</message>    
+        <message code="201" translate="true">Re-try Pin Error</message>
+        <message code="202" translate="true">Re-try Edit Error</message>
+        <message code="203" translate="true">Re-try System Problem</message>    
+        <message code="204" translate="true">Over Retailer Limit</message>
+        <message code="205" translate="true">Re-try Edit Error</message>
+        <message code="206" translate="true">Card Is Not Set Up</message>
+        <message code="207" translate="true">Re-try Edit Error</message>    
+        <message code="208" translate="true">Re-try Edit Error</message>
+        <message code="209" translate="true">Re-try Edit Error</message>
+        <message code="210" translate="true">Re-try Edit Error</message>    
+        <message code="212" translate="true">Issuer Not Online</message>
+        <message code="251" translate="true">Re-try Edit Error</message>
+        <message code="252" translate="true">Card Not Supported</message>
+
+        <message code="426" translate="true">Call Amex 12</message>    
+        <message code="427" translate="true">Invalid Merchant</message>
+        <message code="429" translate="true">Account Error Re-try</message>
+        <message code="430" translate="true">Expired Card</message>    
+        <message code="431" translate="true">Call Amex</message>
+        <message code="434" translate="true">Call Amex 03</message>
+        <message code="435" translate="true">System Down</message>
+        <message code="436" translate="true">Call Amex 05</message>    
+        <message code="437" translate="true">Declined</message>
+        <message code="438" translate="true">Declined</message>
+        <message code="439" translate="true">Service Error</message>    
+        <message code="440" translate="true">Call Amex</message>
+        <message code="441" translate="true">Amt Error - Retry</message>
+
+        <message code="408" translate="true">Declined</message>    
+        <message code="475" translate="true">Declined - Invalid Expiry Date</message>    
+        <message code="476" translate="true">Declined</message>    
+        <message code="477" translate="true">Declined Unknown Account</message>    
+        <message code="478" translate="true">Declined 41-hold Card Call</message>    
+        <message code="479" translate="true">Declined Pick Up Card</message>    
+        <message code="480" translate="true">Declined 43-hold Card Call</message>    
+        <message code="481" translate="true">Declined</message>    
+        <message code="482" translate="true">Declined Expired card</message>
+        <message code="483" translate="true">Declined Refer Call To Issuer</message>
+        <message code="484" translate="true">Declined</message>    
+        <message code="485" translate="true">Declined</message>
+        <message code="486" translate="true">Declined</message>
+        <message code="487" translate="true">Declined</message>
+        <message code="488" translate="true">Declined</message>    
+        <message code="489" translate="true">Declined</message>
+        <message code="490" translate="true">Declined</message>
+        <message code="492" translate="true">Declined – Please Insert Card</message>    
+
+        <message code="800" translate="true">Re-try Edit Error</message>
+        <message code="801" translate="true">Re-try Edit Error</message>
+        <message code="802" translate="true">Invalid Clerk Id</message>    
+        <message code="809" translate="true">Re-try - Trans Not Permitted</message>
+        <message code="810" translate="true">Re-try System Timeout</message>    
+        <message code="811" translate="true">Re-try System Problem</message>
+        <message code="821" translate="true">Re-try Edit Error</message>    
+        <message code="877" translate="true">Re-try Edit Error</message>
+        <message code="878" translate="true">Re-try Pin Error</message>    
+        <message code="889" translate="true">Re-try Edit Error</message>
+        <message code="898" translate="true">Re-try Edit Error</message>    
+        <message code="899" translate="true">Terminal Must Handle This Internally - Resend</message>
+        <message code="900" translate="true">Excess Pin Tries</message>    
+        <message code="901" translate="true">Expired Card</message>
+        <message code="902" translate="true">Card Restricted</message>    
+        <message code="903" translate="true">Card Restricted</message>
+        <message code="904" translate="true">Invalid Amount</message>    
+        <message code="905" translate="true">Max Use Exceeded</message>
+        <message code="906" translate="true">Account Problem</message>    
+        <message code="907" translate="true">Exceeds Limit</message>
+        <message code="908" translate="true">Invalid Amount</message>    
+        <message code="909" translate="true">Card Restricted</message>
+
+        <message code="960" translate="true">Failed To Initialize Merchant Id Error</message>    
+        <message code="961" translate="true">No Match On Ped Contact Help Centre</message>
+        <message code="962" translate="true">Failed To Initialize Printer Id Error</message>    
+        <message code="963" translate="true">No Match On Poll Code</message>
+        <message code="964" translate="true">Failed To Initialize Concentrator Id Err</message>    
+        <message code="965" translate="true">Invalid Version Number</message>
+        <message code="966" translate="true">Duplicate Terminal Name</message>    
+        <message code="970" translate="true">Table Full</message>
+        <message code="983" translate="true">No Activity</message>    
+        <message code="989" translate="true">System Problem</message>
+    </message_list>
+</mapping>

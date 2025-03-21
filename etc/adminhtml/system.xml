@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magecan, Inc. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="moneris" translate="label comment" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label><![CDATA[Moneris - Be Payment Ready]]></label>
+                <attribute type="activity_path">payment/moneris/active</attribute>
+                <comment><![CDATA[Allows merchants to securely accept payment information from customers.]]></comment>
+                <frontend_model>Magecan\Moneris\Block\Adminhtml\System\Config\Fieldset\Payment</frontend_model>
+                <fieldset_css>moneris-section</fieldset_css>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Card Payments</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>payment/moneris/active</config_path>
+                    <requires>
+                        <group id="moneris_required"/>
+                    </requires>
+                </field>
+                <group id="moneris_required" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="5">
+                    <label>Basic Moneris Settings</label>
+                    <attribute type="expanded">1</attribute>
+                    <field id="title" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                        <label>Title</label>
+                        <config_path>payment/moneris/title</config_path>
+                    </field>
+                    <field id="environment" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Environment</label>
+                        <config_path>payment/moneris/environment</config_path>
+                        <source_model>Magecan\Moneris\Model\Adminhtml\Source\Environment</source_model>
+                    </field>
+                    <field id="payment_action" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Payment Action</label>
+                        <config_path>payment/moneris/payment_action</config_path>
+                        <source_model>Magecan\Moneris\Model\Adminhtml\Source\PaymentAction</source_model>
+                    </field>
+                    <field id="store_id" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label> Store ID</label>
+                        <config_path>payment/moneris/store_id</config_path>
+                    </field>
+                    <field id="api_token" translate="label" type="obscure" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>API Token</label>
+                        <config_path>payment/moneris/api_token</config_path>
+                        <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    </field>
+                    <field id="checkout_id" translate="label" type="obscure" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Checkout Id</label>
+                        <config_path>payment/moneris/checkout_id</config_path>
+                        <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    </field>
+                </group>
+                <group id="vault_settings" translate="label" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Vault Settings</label>
+                    <attribute type="expanded">0</attribute>
+                    <depends>
+                        <field id="active">1</field>
+                    </depends>
+                    <field id="vault_active" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Vault Enabled</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        <config_path>payment/moneris/vault_active</config_path>
+                    </field>
+                    <field id="ask_cvv" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Prompt for CVV</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        <config_path>payment/moneris/ask_cvv</config_path>
+                        <comment>When set to Yes, Moneris Checkout will prompt the cardholder to enter their CVV when they select a payment card that has been stored as a token</comment>
+                        <depends>
+                            <field id="vault_active">1</field>
+                        </depends>
+                    </field>
+                </group>
+                <group id="other_settings" translate="label" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Other Settings</label>
+                    <attribute type="expanded">0</attribute>
+                    <field id="debug" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Debug</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        <config_path>payment/moneris/debug</config_path>
+                    </field>
+                    <field id="iframe_height" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Iframe Height</label>
+                        <comment>Unit: px</comment>
+                        <frontend_class>validate-number</frontend_class>
+                        <config_path>payment/moneris/iframe_height</config_path>
+                    </field>
+                    <field id="dynamic_descriptor" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Dynamic Descriptor</label>
+                        <config_path>payment/moneris/dynamic_descriptor</config_path>
+                        <validate>validate-length maximum-length-22</validate>
+                        <comment>Total of 22 characters including your merchant name and separator.</comment>
+                    </field>
+                    <field id="sort_order" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Sort Order</label>
+                        <frontend_class>validate-number</frontend_class>
+                        <config_path>payment/moneris/sort_order</config_path>
+                    </field>
+                </group>
+            </group>
+        </section>
+    </system>
+</config>

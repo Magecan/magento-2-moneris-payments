@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magecan, Inc. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <moneris>
+                <model>MonerisFacade</model>
+                <title>Credit Card (Moneris)</title>
+                <active>0</active>
+                <vault_active>0</vault_active>
+                <ask_cvv>1</ask_cvv>
+                <payment_action>authorize</payment_action>
+                <environment>sandbox</environment>
+                <iframe_height>1050</iframe_height>
+                <sandbox_checkout_url>https://gatewayt.moneris.com/chktv2/request/request.php</sandbox_checkout_url>
+                <production_checkout_url>https://gateway.moneris.com/chktv2/request/request.php</production_checkout_url>
+                <api_token backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <checkout_id backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <debug>0</debug>
+                <can_use_checkout>1</can_use_checkout>
+                <is_gateway>0</is_gateway>
+                <can_authorize>1</can_authorize>
+                <can_capture>0</can_capture>
+                <can_capture_partial>0</can_capture_partial>
+                <can_use_internal>0</can_use_internal>
+                <can_refund_partial_per_invoice>0</can_refund_partial_per_invoice>
+                <can_refund>0</can_refund>
+                <can_void>0</can_void>
+                <can_cancel>0</can_cancel>
+                <can_edit>1</can_edit>
+                <can_review_payment>0</can_review_payment>
+                <can_deny_payment>0</can_deny_payment>
+                <cctypes_moneris_mapper>
+                    <M>
+                        <type>MC</type>
+                        <label>MasterCard</label>
+                    </M>
+                    <V>
+                        <type>VI</type>
+                        <label>Visa</label>
+                    </V>
+                    <AX>
+                        <type>AE</type>
+                        <label>American Express</label>
+                    </AX>
+                    <C1>
+                        <type>JCB</type>
+                        <label>JCB</label>
+                    </C1>
+                    <NO>
+                        <type>DI</type>
+                        <label>Discover</label>
+                    </NO>
+                </cctypes_moneris_mapper>
+                <order_status>processing</order_status>
+                <privateInfoKeys>reference_no,response_code</privateInfoKeys>
+                <paymentInfoKeys>card_type,card_num,reference_no,transaction_date_time,response_code,wallet_type</paymentInfoKeys>
+                <group>moneris_group</group>
+            </moneris>
+        </payment>
+    </default>
+</config>

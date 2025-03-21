@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magecan, Inc. All rights reserved.
+ */
+-->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+        <policies>
+            <policy id="script-src">
+                <values>
+                    <value id="gateway.moneris.com" type="host">https://gateway.moneris.com</value>
+                    <value id="gatewayt.moneris.com" type="host">https://gatewayt.moneris.com</value>
+                </values>
+            </policy>
+            <policy id="style-src">
+                <values>
+                    <value id="gateway.moneris.com" type="host">https://gateway.moneris.com</value>
+                    <value id="gatewayt.moneris.com" type="host">https://gatewayt.moneris.com</value>
+                </values>
+            </policy>
+        </policies>
+</csp_whitelist>
