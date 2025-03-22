@@ -1,0 +1,3 @@
+Moneris is a provider of innovative solutions for mobile, online and in-store payments. Serving businesses of every size and industry, Moneris offers hardware, software and solutions to help transform the way businesses grow and operate, in payments and beyond. 
+
+This Moneris payments extension for Magento 2 implements Moneris Checkout payment method defined in Moneris Checkout Integration Guide. It is a fully PCI compliant solution, which keeps credit card information from being entered or stored in Magento.  Customers can use all major credit card types like VISA, MasterCard, American Express, Discover, JCB.
